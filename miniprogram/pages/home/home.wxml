@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<view class="movie"  wx:for="{{movies}}" wx:key="index">
+    <image src="{{item.images.small}}" class="movie-img"></image>
+    <view class="movie-info">
+      <view>
+        <text class="movie-title">{{item.title}}</text>
+      </view>
+      <view>
+        观众评分:
+        <text class="movie-scroce">{{item.rating.average}}</text>
+      </view>
+      <view>
+        主演:
+        <text wx:for="{{item.casts}}" wx:key="index">
+          <text>{{item.name}} </text>
+        </text>
+      </view>
+      <view>
+        年份:
+        <text>{{item.year}}</text>
+      </view>
+      <button class="movie-item" bindtap='jumpComment'data-id="{{item.id}}">详情</button>
+    </view>
+</view>

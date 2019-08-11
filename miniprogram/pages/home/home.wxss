@@ -1,0 +1,31 @@
+/* pages/home/home.wxss */
+.movie{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ccc;
+}
+.movie .movie-img{
+  width:350rpx;
+  height:350rpx;
+  margin-top:30rpx;
+}
+.movie .movie-info{
+  flex:1;
+  line-height:80rpx;
+  font-size:28rpx;
+  margin-bottom:20rpx;
+  margin-left:20rpx;
+}
+.movie .movie-item{
+  width:60%;
+  font-size:28rpx;
+  background:lightgreen;
+  margin-left:0;
+}
+.movie .movie-title{
+  color:#666;
+  font-size:40rpx;
+}
+.movie .movie-scroce{
+  color:#f62;
+}

@@ -1,0 +1,16 @@
+<!--pages/mymovie/mymovie.wxml-->
+<view class="mymovie">
+<!--输入框输入你喜欢的电影文字-->
+<van-cell-group>
+      <van-field
+        value="{{ content }}"
+        placeholder="写下你此时的心情"
+        border="{{ false }}"
+        bind:change="onContentChange"
+      />
+</van-cell-group>
+<!--按钮，上传图片-->
+<van-button type="primary" size='large' bindtap='selectImge'bindtap='myupload'>上传一张图片</van-button>
+<!--按钮，提交按钮-->
+<van-button type="warning" size='large' bindtap='selectImge' bindtap='mysumbit'>提交</van-button>
+</view>
